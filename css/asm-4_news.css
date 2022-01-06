@@ -1,0 +1,196 @@
+body {
+    background-image: url("../img/clockwork.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+#head {
+    display: block;
+    height: 3vw;
+    background-color: rgba(160, 160, 255, 0.884);
+}
+
+#head h1 {
+    display: inline;
+    margin-left: 36%;
+    font-size: 2.5vw;
+    vertical-align: top;
+}
+
+#head img {
+    width: 1.5vw;
+    margin-left: 1vw;
+    vertical-align: top;
+    margin-top: 0.75vw;
+    cursor: pointer;
+}
+
+#srch-bar {
+    display: none;
+}
+
+#srch-popup {
+    position: fixed;
+    z-index: 10;
+    top: 5.3%;
+    left: 12%;
+    background-color: white;
+    border-radius: 5px;
+    border: 1.5px solid black;
+    width: 75vw;
+    height: 3vw;
+    padding-left: 5vw;
+    visibility: hidden;
+}
+
+#srch-popup.active {
+    visibility: visible;
+}
+
+#srch-popup label {
+    font-size: 1.4vw;
+    margin-left: 4vw;
+    position: relative;
+    vertical-align: text-top;
+}
+
+#srch-popup .inputBox {
+    position: relative;
+    display: inline-block;
+    margin-top: 0.55vw;
+}
+
+#srch-popup .inputBox input {
+    width: 28vw;
+    margin-left: 0.5vw;
+    height: 1.25vw;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 1.2vw;
+    vertical-align: top;
+}
+
+#srch-popup .inputBox button {
+    width: 5vw;
+    height: 1.75vw;
+    font-size: 1vw;
+    font-weight: 600;
+    margin-left: 3vw;
+    cursor: pointer;
+    background-color: rgba(255, 255, 166, 0.767);
+    vertical-align: top;
+}
+
+#srch-popup .inputBox button:hover {
+    background-color: rgb(100, 100, 255);
+    color: whitesmoke;
+}
+
+#srch-popup #close {
+    display: inline-block;
+    width: 1.1vw;
+    margin-left: 20.25vw;
+    margin-top: 0.5vw;
+    cursor: pointer;
+}
+
+#counter {
+    font-size: 1.75vw;
+    color: whitesmoke;
+    font-weight: 600;
+    margin-top: 0.75vw;
+    margin-bottom: 0.75vw;
+}
+
+div.articles {
+    background-color: white;
+    margin-bottom: 0.75vw;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+img.articles {
+    width: 17.5vw;
+    display: inline-block;
+    margin-left: 1vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    vertical-align: top;
+    border: 1.5px solid black;
+    border-radius: 4px;
+}
+
+div.articlesHeaders {
+    display: inline-block;
+    font-size: 1.5vw;
+    height: 100%;
+    vertical-align: top;
+    margin-top: 1vw;
+    margin-left: 1.25vw;
+}
+
+em.articles {
+    font-size: 0.9vw;
+}
+
+p.articles {
+    display: inline-block;
+    font-size: 1.2vw;
+}
+
+div.articlesHeaders b,
+a.articles {
+    font-size: 1.25vw;
+}
+
+@media screen and (min-width: 900px) {
+    #srch-bar {
+        display: inline-block;
+        width: 50vw;
+        height: 3vw;
+        margin-left: 2vw;
+    }
+    #srch-bar input {
+        position: relative;
+        display: inline-block;
+        margin-top: 0.55vw;
+    }
+    #srch-bar input[type="text"] {
+        width: 30vw;
+        margin-left: 0.5vw;
+        height: 1.5vw;
+        position: relative;
+        border: 1px solid black;
+        border-radius: 3px;
+        font-size: 1vw;
+        vertical-align: top;
+        font-size: 1.25vw;
+    }
+    #srch-bar input[type="submit"] {
+        width: 5vw;
+        height: 1.75vw;
+        font-size: 1vw;
+        font-weight: 600;
+        margin-left: 1.5vw;
+        cursor: pointer;
+        background-color: rgba(236, 167, 88, 0.767);
+        border: 1px solid black;
+        border-radius: 3px;
+        vertical-align: top;
+    }
+    #srch-bar input[type="submit"]:hover {
+        background-color: rgb(29, 127, 255);
+        color: whitesmoke;
+    }
+    #head img {
+        display: none;
+    }
+    #srch-popup.active {
+        visibility: hidden;
+    }
+    #head h1 {
+        margin-left: 19.5%;
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phaust's news site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/asm-4_news.css">
+</head>
+
+<body>
+    <header>
+        <div id="head">
+            <h1> What's new today! </h1>
+            <div id="srch-bar">
+                <input id="srchLarge" type="text">
+                <input type="submit" value="search" id="srchLg">
+            </div>
+            <a onclick="toggleSrch();"><img src="img/search-solid.png"></a>
+        </div>
+        <div id="srch-popup">
+            <label for="search"> Search something: </label>
+            <div class="inputBox">
+                <input id="srchPopup" type="text" name="search">
+            </div>
+            <div class="inputBox">
+                <button id="srchSm"> Search </button>
+            </div>
+            <a onclick="toggleSrch();"><img src="img/close.png" id="close"></a>
+        </div>
+    </header>
+    <main>
+        <p id="counter"></p>
+        <hr>
+        <div id="content"></div>
+    </main>
+    <script src="js/asm-4_news.js"></script>
+</body>
+
+</html>
